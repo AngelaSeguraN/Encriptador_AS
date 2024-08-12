@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador AS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body">
+    <header>
+        <img class="imagen__alura" src="assets/Logo Alura.svg" alt="Logo Alura">
+    </header>
+    <main class="main">
+            <section class="parteuno">
+            
+                <textarea class="parteuno__texto__ingresado" type="text" id="mensaje" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="parteuno__parte__aviso">
+                    <img  class="parteuno__aviso__imagen" src="assets/imagen advertencia.png" alt="Aviso advertencia">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="parteuno__botones">
+                    <button class="parteuno__boton__encriptar" onclick="encriptarMensaje()">Encriptar</button>
+                    <button class="parteuno__boton__desencriptar" onclick="desencriptarMensaje()">Desencriptar</button>
+                </div>
+            </section>
+            
+            <section class="partedos">
+                    <textarea class="partedos__texto__resultado" name="resultado" id="resultadoEncriptado" readonly ></textarea>
+                <div class="partedos__textos">
+                    <p class="partedos__texto1" id="p1" style="display: block;" >Ningún mensaje fue encontrado</p>
+                    <p class="partedos__texto2" id="p2" style="display: block;">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <div class="partedos__div__boton">
+                    <button class="partedos__boton" onclick="copiar()" id="copiar" style="display: none;" >Copiar</button>
+                </div>
+                
+            </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Angela Segura para Alura Latam</p>
+    </footer>
+        <script src="app.js" defer></script> 
+</body>
+</html>
